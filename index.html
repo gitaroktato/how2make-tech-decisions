@@ -24,7 +24,7 @@
 			}
 			.reveal header {
 				position: relative;
-				top: 10px;
+				top: 0px;
 				left: 10px;
 				text-align: left;
 				font-size: 1.5em;
@@ -65,7 +65,7 @@
 				box-shadow: none;
 			}
 			.reveal section.full-size {
-				 style="height: 100%;
+				 height: 100%;
 			}
 		</style>
 		<!-- Printing and PDF exports -->
@@ -85,7 +85,7 @@
 				</section>
 				<section class="full-size">
 					<header>Examples</header>
-					<div style="padding: 58px;">
+					<div style="padding: 5%;">
 						<p class="fragment fade-in">MongoDB &hArr; MySQL</p>
 						<p class="fragment fade-in">Hibernate &hArr; JDBC</p>
 						<p class="fragment fade-in">Maven &hArr; gradle</p>
@@ -116,10 +116,59 @@
 				</section>
 				<section class="full-size">
 					<header>We all have war stories</header>
-					<div style="padding: 78px;">
-						<img src="img/nerd-32821.svg" height="340px" align="left" class="img-inline">
+					<div style="padding: 128px;">
+						<img src="img/speech-bubble.svg" class="img-inline" style="position: absolute; top: 148px; left: 375px;" width="825">
+						<img src="img/nerd-32821.svg" height="540px" align="left" class="img-inline">
 						<span class="handwritten">implemented his own<br> framework & wants to<br> use it in the project</span>
 					</div>
+				</section>
+				<section>
+					<h3>Cost of a bad decision</h3>
+					<canvas data-chart="line">
+						<!--
+						{
+						 "data": {
+						  "labels": ["January"," February"," March"," April"," May"," June"," July"],
+						  "datasets": [
+						   {
+						    "data":[65,59,80,81,56,55,40],
+						    "label": "", "backgroundColor":"rgba(20,220,220,.8)"
+						   },
+						   {
+						    "data":[28,48,40,19,86,27,90],
+						    "label": "", "backgroundColor":"rgba(220,120,120,.8)"
+						   }
+						  ]
+						 },
+						 "options": { "responsive": "true" }
+						}
+						-->
+					</canvas>
+				</section>
+				<section>
+					<table>
+								<tr><td>
+								<figure>
+								  <img src="img/bubble-gum.jpg" >
+								  <figcaption>Sticky</figcaption>
+								</figure>
+							</td>
+							<td>
+								<figure>
+								  <img src="img/Whitespace.gif">
+								  <figcaption>Cognitive noise</figcaption>
+								</figure>
+							</td>
+							</tr>
+							<tr><td>
+							<article>
+								<figure>
+								  <img src="img/Whitespace.gif">
+								  <figcaption>Cognitive noise</figcaption>
+								</figure>
+							</article>
+						</td></tr>
+					</table>
 				</section>
 				<section>
 					<div class="fragment" id="first-anim"></div>
@@ -150,6 +199,8 @@
 				width: "100%",
 				height: "100%",
 				dependencies: [
+					{ src: 'plugin/chart/Chart.min.js' },
+					{ src: 'plugin/chart/csv2chart.js' },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
