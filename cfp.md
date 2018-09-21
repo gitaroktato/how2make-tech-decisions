@@ -1,3 +1,4 @@
 # Elevator pitch
-Developers nowadays face the problem of making tons of technology choices at every phase of a project. The amount of new technologies and tools available is outstanding. Most of us tend to use convenient technologies from our last assignment, but is it really the best choice? Aren't we withholding ourselves from the opportunity to innovate? How to make a sound technology choice relatively fast? That's what's the talk about.
+What are the consequences of bad technical decisions? How to make a sound technology choice relatively fast? How we can compare technologies? How we can improve the decision making process? That's what I would like to show in this presentation.
+
 
